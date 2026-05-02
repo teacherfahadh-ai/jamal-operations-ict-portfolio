@@ -1,116 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jamal Fahadh Mohamed | Operations Specialist</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jamal Fahadh Mohamed | Operations Assistant</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f7fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+nav {
+    position: sticky;
+    top: 0;
+    background: #1f3c88;
+    padding: 15px;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+nav a:hover {
+    color: #4a6cf7;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #1f3c88, #4a6cf7);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+header img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 4px solid rgba(255,255,255,0.2);
+    object-fit: cover;
+}
+header h1 { margin: 0; font-size: 2.5rem; }
+header h2 { font-weight: 300; margin-top: 10px; color: #d1d9ff; }
+
+/* SECTIONS */
+section {
+    max-width: 950px;
+    margin: auto;
+    padding: 40px 20px;
+}
+.card {
+    background: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+h2.section-title {
+    color: #1f3c88;
+    border-left: 5px solid #4a6cf7;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+/* ACHIEVEMENT BADGE */
+.stat-box {
+    display: flex;
+    align-items: center;
+    background: #eef2ff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #c7d2fe;
+    margin-top: 15px;
+}
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #1f3c88;
+    margin-right: 20px;
+}
+
+/* BUTTONS */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #4a6cf7;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.btn:hover { background: #1f3c88; }
+
+.whatsapp {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: #25D366;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background: #1f3c88;
+    color: white;
+}
+</style>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans">
 
-    <!-- Header Section -->
-    <header class="bg-blue-900 text-white py-16 px-6 text-center">
-        <h1 class="text-4xl font-bold mb-2">JAMAL FAHADH MOHAMED</h1>
-        <p class="text-xl text-blue-200">Operations Assistant | ICT & Administrative Systems Specialist</p>
-        <div class="mt-6 flex justify-center gap-6 flex-wrap">
-            <span><i class="fas fa-map-marker-alt mr-2"></i>Hargeisa, Somaliland</span>
-            <span><i class="fas fa-phone mr-2"></i>+252 636 710907</span>
-            <span><i class="fas fa-envelope mr-2"></i>jamalfahadhm@gmail.com</span>
-        </div>
-    </header>
+<body>
 
-    <main class="max-w-4xl mx-auto py-12 px-6">
-        
-        <!-- Summary -->
-        <section class="mb-12">
-            <h2 class="text-2xl font-bold border-b-2 border-blue-900 pb-2 mb-4">Professional Summary</h2>
-            <p class="leading-relaxed">
-                Results-driven Operations and ICT Specialist with a Bachelor of Business Information Technology (Upper Second Class Honors) and 7+ years of experience supporting administrative, technical, and operational functions. Proven ability to manage data systems, coordinate logistics, and support organizational workflows in fast-paced environments.
-            </p>
-        </section>
+<nav>
+    <a href="#profile">Profile</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="mailto:jamalfahadhm@gmail.com">Contact</a>
+</nav>
 
-        <!-- Core Skills Grid -->
-        <section class="mb-12">
-            <h2 class="text-2xl font-bold border-b-2 border-blue-900 pb-2 mb-4">Core Competencies</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div class="bg-white p-4 shadow-sm rounded border-l-4 border-blue-900">
-                    <h3 class="font-bold">Operations Support</h3>
-                    <p class="text-sm">Expert in streamlining office workflows and supporting mission-critical tasks.</p>
-                </div>
-                <div class="bg-white p-4 shadow-sm rounded border-l-4 border-blue-900">
-                    <h3 class="font-bold">Inventory & Asset Tracking</h3>
-                    <p class="text-sm">Experienced in tracking institutional assets and ensuring resource availability.</p>
-                </div>
-                <div class="bg-white p-4 shadow-sm rounded border-l-4 border-blue-900">
-                    <h3 class="font-bold">Data Management</h3>
-                    <p class="text-sm">Proficient in preparing operational reports and maintaining data integrity.</p>
-                </div>
-                <div class="bg-white p-4 shadow-sm rounded border-l-4 border-blue-900">
-                    <h3 class="font-bold">Procurement</h3>
-                    <p class="text-sm">Skilled in preparing technical specifications and managing vendor relationships[cite: 2].</p>
-                </div>
-            </div>
-        </section>
+<header>
+    <img src="profile.jpg" alt="Jamal Fahadh Mohamed">
+    <h1>JAMAL FAHADH MOHAMED</h1>
+    <h2>Operations Assistant | ICT & Administrative Systems Specialist</h2>
+    <p>Ensuring operational efficiency through technical innovation and executive coordination.</p>
+    <a href="cv.pdf" class="btn"><i class="fas fa-download mr-2"></i> Download CV</a>
+</header>
 
-        <!-- Featured Achievement Box -->
-        <section class="mb-12 bg-blue-50 p-8 rounded-lg border border-blue-200">
-            <h2 class="text-2xl font-bold text-blue-900 mb-4">Key Operational Impact</h2>
-            <div class="flex flex-col md:flex-row items-center gap-6">
-                <div class="text-4xl font-black text-blue-900 italic">89%</div>
-                <div>
-                    <h3 class="font-bold text-lg text-blue-900">Digital Transformation Success</h3>
-                    <p>Implemented a digital Library Management System at Elm High School, achieving an 89% system adoption rate and drastically improving asset accountability[cite: 2].</p>
-                </div>
-            </div>
-        </section>
+<section id="profile">
+    <div class="card">
+        <h2 class="section-title">Professional Profile</h2>
+        <p>
+            Results-driven Operations Specialist with a **Bachelor of Business Information Technology** and **7+ years of experience**. 
+            Highly skilled in administrative coordination, logistics, and mission-critical support in fast-paced environments like Hargeisa.
+        </p>
+    </div>
+</section>
 
-        <!-- Experience -->
-        <section class="mb-12 text-slate-700">
-            <h2 class="text-2xl font-bold border-b-2 border-blue-900 pb-2 mb-6">Professional Experience</h2>
-            
-            <div class="mb-8">
-                <div class="flex justify-between items-baseline mb-2">
-                    <h3 class="text-xl font-bold">ICT Lead & Operations Support</h3>
-                    <span class="text-sm font-semibold">2018 - 2025</span>
-                </div>
-                <p class="text-blue-900 italic mb-2 font-medium italic italic">Elm High School, Hargeisa[cite: 2]</p>
-                <ul class="list-disc ml-5 space-y-1">
-                    <li>Managed daily operations of ICT systems including hardware and software with zero downtime[cite: 2].</li>
-                    <li>Maintained accurate inventory systems for all institutional assets[cite: 2].</li>
-                    <li>Facilitated procurement by evaluating vendor bids for cost-effectiveness[cite: 2].</li>
-                </ul>
-            </div>
-
+<section id="achievements">
+    <div class="card">
+        <h2 class="section-title">Strategic Impact</h2>
+        <div class="stat-box">
+            <div class="stat-number">89%</div>
             <div>
-                <div class="flex justify-between items-baseline mb-2">
-                    <h3 class="text-xl font-bold">Administrative & Operations Assistant</h3>
-                    <span class="text-sm font-semibold">2017</span>
-                </div>
-                <p class="text-blue-900 italic mb-2 font-medium italic italic">Turkana School of Technology, Kenya[cite: 2]</p>
-                <ul class="list-disc ml-5 space-y-1">
-                    <li>Managed institutional data systems and ensured accurate record-keeping[cite: 2].</li>
-                    <li>Supported administrative operations and internal policy compliance[cite: 2].</li>
-                </ul>
+                <h3 style="margin:0; color:#1f3c88;">System Adoption Success</h3>
+                <p style="margin:5px 0 0 0;">Successfully implemented a digital Library Management System at Elm High School, achieving near-total adoption and streamlining asset tracking.</p>
             </div>
-        </section>
+        </div>
+        <ul style="margin-top:20px; color:#555;">
+            <li>✔ Improved reporting accuracy and real-time tracking systems.</li>
+            <li>✔ Optimized vendor liaison and procurement workflows.</li>
+            <li>✔ Maintained zero-downtime for critical institutional ICT infrastructure.</li>
+        </ul>
+    </div>
+</section>
 
-        <!-- Education -->
-        <section class="mb-12">
-            <h2 class="text-2xl font-bold border-b-2 border-blue-900 pb-2 mb-4">Education</h2>
-            <div class="bg-white p-6 shadow-sm rounded">
-                <h3 class="font-bold text-lg">Bachelor of Business Information Technology (BBIT)</h3>
-                <p>Jomo Kenyatta University of Agriculture and Technology (JKUAT)[cite: 2]</p>
-                <p class="text-blue-900 font-semibold">Second Class Honors (Upper Division)[cite: 2]</p>
-            </div>
-        </section>
+<section id="experience">
+    <div class="card">
+        <h2 class="section-title">Professional Experience</h2>
+        
+        <div style="margin-bottom: 25px;">
+            <h3 style="margin:0;">ICT Lead & Operations Support</h3>
+            <p style="color:#4a6cf7; font-weight:bold; margin:5px 0;">Elm High School, Hargeisa | 2018 – 2025</p>
+            <ul>
+                <li>Managed daily operations of ICT systems, ensuring hardware and software availability.</li>
+                <li>Led procurement processes by preparing technical specifications and evaluating vendor bids.</li>
+                <li>Provided executive support to school leadership through detailed operational reporting.</li>
+            </ul>
+        </div>
 
-    </main>
+        <div>
+            <h3 style="margin:0;">Administrative & Operations Assistant</h3>
+            <p style="color:#4a6cf7; font-weight:bold; margin:5px 0;">Turkana School of Technology | 2017</p>
+            <ul>
+                <li>Ensured institutional record-keeping accuracy and data system integrity.</li>
+                <li>Coordinated administrative compliance with internal policies and procedures.</li>
+            </ul>
+        </div>
+    </div>
+</section>
 
-    <footer class="bg-slate-900 text-white py-10 text-center">
-        <p>© 2026 Jamal Fahadh Mohamed</p>
-        <p class="text-slate-500 text-sm mt-2 font-light italic italic">Local Resident - Hargeisa, Somaliland[cite: 2]</p>
-    </footer>
+<section id="education">
+    <div class="card">
+        <h2 class="section-title">Education & Certification</h2>
+        <p><strong>Bachelor of Business Information Technology (BIT)</strong><br>
+        Jomo Kenyatta University of Agriculture and Technology (JKUAT)<br>
+        <span style="color:#1f3c88; font-weight:bold;">Second Class Honors (Upper Division)</span></p>
+        
+        <p><strong>Cert. in E-commerce, Web Design & Entrepreneurship</strong><br>
+        East Africa Solution | <span style="color:#25D366; font-weight:bold;">Distinction</span></p>
+    </div>
+</section>
+
+<a href="https://wa.me/252636710907" class="whatsapp">
+    <i class="fab fa-whatsapp mr-2"></i> WhatsApp Me
+</a>
+
+<footer>
+    <p>© 2026 Jamal Fahadh Mohamed</p>
+    <p style="font-size: 0.8rem; opacity: 0.7;">Idacada, Hargeisa, Somaliland (Local Resident)</p>
+</footer>
 
 </body>
 </html>
